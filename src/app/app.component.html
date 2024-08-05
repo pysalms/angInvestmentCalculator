@@ -1,0 +1,6 @@
+<app-header></app-header>
+<app-user-input (invest)="getInvestmentDetails($event)"></app-user-input>
+@if(calcInvestment){
+    <app-investment-display [investmentData]="calcInvestment"></app-investment-display>
+}
+<!-- <app-investment-display></app-investment-display> -->

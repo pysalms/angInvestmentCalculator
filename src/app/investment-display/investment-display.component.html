@@ -1,0 +1,28 @@
+
+<table>
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Investment Value</th>
+            <th>Interest(year)</th>
+            <th>Total Interest</th>
+            <th>Invested Capital</th>
+        </tr>
+    </thead>
+    <tbody>
+    @if(investmentData){    
+      @for(invest of investmentData; track invest.year){
+        <tr>
+            <td>{{invest.year}}</td>
+            <td>{{invest.valueEndOfYear}}</td>
+            <td>{{invest.interest}}</td>
+            <td>{{invest.totalInterest}}</td>
+            <td>{{invest.totalAmountInvested}}</td>
+            <!-- {{invest}} -->
+        </tr>
+        }
+      
+    }
+    </tbody>
+   
+</table>
